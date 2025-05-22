@@ -2,6 +2,7 @@ package com.sangtq.convention
 
 import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.CommonExtension
+import com.android.build.api.dsl.LibraryExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Project
 import org.gradle.api.plugins.JavaPluginExtension
@@ -26,6 +27,11 @@ internal fun Project.configureKotlinAndroid(
         }
 
         (commonExtension as? ApplicationExtension)?.buildFeatures?.apply {
+            dataBinding = true
+            viewBinding = true
+        }
+
+        (commonExtension as? LibraryExtension)?.buildFeatures?.apply {
             dataBinding = true
             viewBinding = true
         }

@@ -6,6 +6,8 @@ loggingInterceptor = "4.12.0"
 minSdk = "31"
 okhttp = "4.12.0"
 retrofit = "2.9.0"
+sdpAndroid = "1.1.1"
+sspAndroid = "1.1.1"
 targetSdk = "34"
 compileSdk = "34"
 versionCode = "1"
@@ -59,6 +61,8 @@ moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
 moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi" }
 moshi-adapters = { group = "com.squareup.moshi", name = "moshi-adapters", version.ref = "moshi" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
+ssp-android = { module = "com.intuit.ssp:ssp-android", version.ref = "sspAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -70,7 +74,7 @@ android-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 android-room = { id = "androidx.room", version.ref = "room" }
 
 # Plugins defined by this project
-weather-android-application = { id = "weather.android.application", version = "unspecified" }
-weather-android-library = { id = "weather.android.library", version = "unspecified" }
-weather-android-hilt = { id = "weather.android.hilt", version = "unspecified" }
+music-android-application = { id = "music.android.application", version = "unspecified" }
+music-android-library = { id = "music.android.library", version = "unspecified" }
+music-android-hilt = { id = "music.android.hilt", version = "unspecified" }
 

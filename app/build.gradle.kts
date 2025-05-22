@@ -1,12 +1,12 @@
 plugins {
-    alias(libs.plugins.weather.android.application)
+    alias(libs.plugins.music.android.application)
 }
 
 android {
-    namespace = "com.sangtq.weatherapp"
+    namespace = "com.sangtq.musicapp"
 
     defaultConfig {
-        applicationId = "com.sangtq.weather"
+        applicationId = "com.sangtq.music"
         versionCode = libs.versions.versionCode.get().toInt()
         versionName = libs.versions.versionName.get()
     }
@@ -25,4 +25,7 @@ android {
 
 dependencies {
     implementation(project(":core:ui"))
+    implementation(libs.ssp.android)
+    implementation(libs.sdp.android)
+    implementation(project(":feature:home"))
 }

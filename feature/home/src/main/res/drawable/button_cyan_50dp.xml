@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow Layer -->
+    <item>
+        <shape>
+            <corners android:radius="@dimen/_36sdp" />
+            <solid android:color="#801B5962" /> <!-- Semi-transparent shadow with #1B5962 -->
+        </shape>
+    </item>
+
+    <!-- Button Layer -->
+    <item
+        android:bottom="@dimen/_2sdp"
+        android:left="@dimen/_2sdp"
+        android:right="@dimen/_2sdp"
+        android:top="@dimen/_2sdp"> <!-- Offset for shadow -->
+        <shape>
+            <corners android:radius="@dimen/_36sdp" />
+            <solid android:color="@color/button_primary_color" />
+        </shape>
+    </item>
+</layer-list>

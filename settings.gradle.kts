@@ -20,7 +20,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "WeatherApp"
+rootProject.name = "MusicApp"
 include(":app")
 include(":core")
 include(":core:data")
@@ -28,4 +28,6 @@ include(":core:domain")
 include(":core:network")
 include(":core:model")
 include(":core:ui")
+include(":feature")
 include(":core:database")
+include(":feature:home")

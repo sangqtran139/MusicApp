@@ -1,5 +1,7 @@
 package com.sangtq.musicapp
 
+import android.content.Intent
+import com.sangtq.home.splash.SplashActivity
 import com.sangtq.ui.BaseActivity
 import com.sangtq.musicapp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -16,11 +18,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         get() = R.id.fragment_container
 
     override fun addInitialFragment() {
-        addFragment(FragmentA())
     }
 
     override fun initView() {
-
+        startActivity(Intent(this, SplashActivity::class.java))
+        finish()
     }
 
     override fun initObservers() {

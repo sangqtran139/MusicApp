@@ -13,7 +13,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
             with(pluginManager) {
                 apply("com.android.application")
                 apply("org.jetbrains.kotlin.android")
-                apply("weather.android.hilt")
+                apply("music.android.hilt")
             }
 
             extensions.configure<ApplicationExtension> {

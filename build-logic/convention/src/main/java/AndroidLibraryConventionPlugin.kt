@@ -13,7 +13,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
             with(pluginManager) {
                 apply("com.android.library")
                 apply("org.jetbrains.kotlin.android")
-                apply("weather.android.hilt")
+                apply("music.android.hilt")
             }
 
             extensions.configure<LibraryExtension> {

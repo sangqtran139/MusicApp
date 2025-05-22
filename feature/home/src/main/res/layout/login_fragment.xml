@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_main_color">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_banner"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_140sdp"
+            android:src="@drawable/img_logo_app"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <TextView
+            android:id="@+id/txt_banner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:gravity="center"
+            android:text="@string/let_get_you_in"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/_36ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_banner" />
+
+        <View
+            android:id="@+id/btn_google"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:background="@drawable/rounded_corner_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_banner" />
+
+        <ImageView
+            android:id="@+id/img_google"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/img_logo_google"
+            app:layout_constraintBottom_toBottomOf="@id/btn_google"
+            app:layout_constraintStart_toStartOf="@id/btn_google"
+            app:layout_constraintTop_toTopOf="@id/btn_google" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="@string/continue_with_google"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/btn_google"
+            app:layout_constraintEnd_toEndOf="@id/btn_google"
+            app:layout_constraintStart_toEndOf="@id/img_google"
+            app:layout_constraintTop_toTopOf="@id/btn_google" />
+
+        <View
+            android:id="@+id/btn_facebook"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:background="@drawable/rounded_corner_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_google" />
+
+        <ImageView
+            android:id="@+id/img_facebook"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/img_logo_facebook"
+            app:layout_constraintBottom_toBottomOf="@id/btn_facebook"
+            app:layout_constraintStart_toStartOf="@id/btn_facebook"
+            app:layout_constraintTop_toTopOf="@id/btn_facebook" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="@string/continue_with_facebook"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/btn_facebook"
+            app:layout_constraintEnd_toEndOf="@id/btn_facebook"
+            app:layout_constraintStart_toEndOf="@id/img_facebook"
+            app:layout_constraintTop_toTopOf="@id/btn_facebook" />
+
+        <View
+            android:id="@+id/btn_apple"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:background="@drawable/rounded_corner_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_facebook" />
+
+        <ImageView
+            android:id="@+id/img_apple"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/img_logo_apple"
+            app:layout_constraintBottom_toBottomOf="@id/btn_apple"
+            app:layout_constraintStart_toStartOf="@id/btn_apple"
+            app:layout_constraintTop_toTopOf="@id/btn_apple" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="@string/continue_with_apple"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/btn_apple"
+            app:layout_constraintEnd_toEndOf="@id/btn_apple"
+            app:layout_constraintStart_toEndOf="@id/img_apple"
+            app:layout_constraintTop_toTopOf="@id/btn_apple" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:background="@color/text_primary_color"
+            app:layout_constraintBottom_toBottomOf="@id/txt_or"
+            app:layout_constraintEnd_toStartOf="@id/txt_or"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_or" />
+
+        <TextView
+            android:id="@+id/txt_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="@string/or"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_apple" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:background="@color/text_primary_color"
+            app:layout_constraintBottom_toBottomOf="@id/txt_or"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_or"
+            app:layout_constraintTop_toTopOf="@id/txt_or" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_34sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:background="@drawable/button_cyan_50dp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:gravity="center"
+            android:text="@string/login_with_password"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_or" />
+
+        <TextView
+            android:id="@+id/txt_not_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/century_gothic_regular"
+            android:text="@string/dont_have_an_account"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toStartOf="@id/sign_up"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary_color"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_not_have_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_not_have_account"
+            app:layout_constraintTop_toTopOf="@id/txt_not_have_account" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

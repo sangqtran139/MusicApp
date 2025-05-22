@@ -4,7 +4,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.weather.buildlogic"
+group = "com.music.buildlogic"
 
 // Configure the build-logic plugins to target JDK 17
 // This matches the JDK used to build the project, and is not related to what is running on device.
@@ -35,15 +35,15 @@ tasks {
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "weather.android.application"
+            id = "music.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidLibrary") {
-            id = "weather.android.library"
+            id = "music.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("hiltApplication") {
-            id = "weather.android.hilt"
+            id = "music.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
     }

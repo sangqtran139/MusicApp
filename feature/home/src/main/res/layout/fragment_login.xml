@@ -8,27 +8,18 @@
         android:background="@color/background_main_color">
 
         <ImageView
-            android:id="@+id/img_back"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_24sdp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_23sdp"
-            android:src="@drawable/ic_arrow_left"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
             android:id="@+id/img_banner"
             android:layout_width="@dimen/_140sdp"
             android:layout_height="@dimen/_140sdp"
+            android:contentDescription="@string/todo"
             android:src="@drawable/img_logo_app"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.15" />
+            app:layout_constraintVertical_bias="0.1" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_banner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -64,7 +55,7 @@
             app:layout_constraintStart_toStartOf="@id/btn_google"
             app:layout_constraintTop_toTopOf="@id/btn_google" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_10sdp"
@@ -99,7 +90,7 @@
             app:layout_constraintStart_toStartOf="@id/btn_facebook"
             app:layout_constraintTop_toTopOf="@id/btn_facebook" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_10sdp"
@@ -134,7 +125,7 @@
             app:layout_constraintStart_toStartOf="@id/btn_apple"
             app:layout_constraintTop_toTopOf="@id/btn_apple" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_10sdp"
@@ -157,7 +148,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/txt_or" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_or"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -180,7 +171,7 @@
             app:layout_constraintStart_toEndOf="@id/txt_or"
             app:layout_constraintTop_toTopOf="@id/txt_or" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login"
             android:layout_width="0dp"
             android:layout_height="@dimen/_40sdp"
@@ -188,6 +179,7 @@
             android:layout_marginTop="@dimen/_34sdp"
             android:layout_marginBottom="@dimen/_40sdp"
             android:background="@drawable/button_cyan_50dp"
+            android:backgroundTint="@null"
             android:fontFamily="@font/century_gothic_bold"
             android:gravity="center"
             android:text="@string/login_with_password"
@@ -197,7 +189,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt_or" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_not_have_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -206,13 +198,13 @@
             android:text="@string/dont_have_an_account"
             android:textColor="@color/text_primary_color"
             android:textSize="@dimen/_13ssp"
-            app:layout_constraintEnd_toStartOf="@id/sign_up"
+            app:layout_constraintEnd_toStartOf="@id/btn_sign_up"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
-        <TextView
-            android:id="@+id/sign_up"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="@dimen/_3sdp"

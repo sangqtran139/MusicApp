@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Shadow Layer -->
     <item>
-        <shape>
+        <shape android:shape="rectangle">
             <corners android:radius="@dimen/_36sdp" />
             <solid android:color="#801B5962" /> <!-- Semi-transparent shadow with #1B5962 -->
         </shape>
@@ -14,7 +14,7 @@
         android:left="@dimen/_2sdp"
         android:right="@dimen/_2sdp"
         android:top="@dimen/_2sdp"> <!-- Offset for shadow -->
-        <shape>
+        <shape android:shape="rectangle">
             <corners android:radius="@dimen/_36sdp" />
             <solid android:color="@color/button_primary_color" />
         </shape>

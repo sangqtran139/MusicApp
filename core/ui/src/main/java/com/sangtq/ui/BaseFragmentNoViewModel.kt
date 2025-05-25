@@ -29,13 +29,9 @@ abstract class BaseFragmentNoViewModel<DB : ViewDataBinding> : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupViewModel()
         initView()
     }
 
     open fun initView() {
-    }
-
-    open fun setupViewModel() {
     }
 }

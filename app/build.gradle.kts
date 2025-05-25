@@ -24,8 +24,9 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:ui"))
+    implementation(projects.core.ui)
     implementation(libs.ssp.android)
     implementation(libs.sdp.android)
-    implementation(project(":feature:home"))
+    implementation(projects.feature.home)
+    implementation(libs.androidx.core.splashscreen)
 }

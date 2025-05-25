@@ -32,7 +32,7 @@
             android:layout_marginTop="@dimen/_minus50sdp"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_banner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

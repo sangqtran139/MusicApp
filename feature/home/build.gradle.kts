@@ -7,7 +7,8 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:ui"))
+    implementation(projects.core.ui)
+    implementation(projects.core.database)
     implementation(libs.ssp.android)
     implementation(libs.sdp.android)
 }
